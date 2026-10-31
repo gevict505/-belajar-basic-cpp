@@ -12,6 +12,17 @@ double hitung_keliling (double p, double l){
     return keliling;
 }
 
+void tampilkan_luas(double p, double l){
+    cout << "Menggunakan void \n";
+    cout << "luasnya adalah: ";
+    cout << hitung_luas(p,l) << endl;
+}
+void tampilkan_keliling(double p, double l){
+    cout << "Menggunakan void \n";
+    cout << "kelilingnya adalah: ";
+    cout << hitung_keliling(p,l) << endl;
+}
+
 int main(){
     
     double panjang, lebar;
@@ -20,10 +31,8 @@ int main(){
     cout << "Lebar: ";
     cin >> lebar;
 
-    cout << "Luasnya adalah: "; 
-    cout << hitung_luas(panjang, lebar) << endl;
-    cout << "Kelilingnya adalah: ";
-    cout << hitung_keliling(panjang, lebar) << endl;
+    tampilkan_luas(panjang, lebar);
+    tampilkan_keliling(panjang, lebar);
 
     cin.get();
     return 0;
